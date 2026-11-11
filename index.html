@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GTA VI — Welcome to Leonida | Grand Theft Auto 6 | Launching November 19, 2026 on PS5 &amp; Xbox Series X|S</title>
+<meta name="description" content="Grand Theft Auto VI launches November 19, 2026 on PS5, PS5 Pro and Xbox Series X|S. Jason Duval and Lucia Caminos, Vice City, Leonida — release date, trailers, editions, prices, map, timeline and FAQ. Unofficial fan tribute." />
+<meta name="theme-color" content="#0d0616" />
+<meta property="og:title" content="GTA VI — Welcome to Leonida" />
+<meta property="og:description" content="Grand Theft Auto VI. November 19, 2026. PS5, PS5 Pro &amp; Xbox Series X|S. Vice City is waiting." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/art-hero.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23120a24'/%3E%3Ccircle cx='32' cy='34' r='16' fill='%23ff9a3c'/%3E%3Crect x='14' y='32' width='36' height='3.4' fill='%23120a24'/%3E%3Crect x='14' y='39.5' width='36' height='3.4' fill='%23120a24'/%3E%3Crect x='10' y='50' width='44' height='2.6' fill='%23ff2e88'/%3E%3Crect x='14' y='55.5' width='36' height='2.2' fill='%23ff2e88' opacity='.7'/%3E%3C/svg%3E" />
+<style>
+/* ============================================================
+   GTA VI — LEONIDA | fan tribute site
+   Self-contained: inline CSS, inline SVG, local media assets.
+   ============================================================ */
+:root{
+  --night:#0d0616;
+  --night-2:#160b26;
+  --panel:#1b1030;
+  --panel-2:#221338;
+  --line:rgba(244,226,200,.14);
+  --line-strong:rgba(244,226,200,.28);
+  --sand:#f4e2c8;
+  --muted:#b7a6cd;
+  --pink:#ff2e88;
+  --hot:#ff4fd8;
+  --coral:#ff5e5b;
+  --orange:#ff8a3d;
+  --sun:#ffc44d;
+  --teal:#25f4ee;
+  --gold:#ffd23f;
+  --grad-sun:linear-gradient(180deg,#ffe259 0%,#ffb347 22%,#ff5e78 48%,#d63384 76%,#7a1fa2 100%);
+  --grad-hot:linear-gradient(135deg,#ff2e88 0%,#ff5e5b 55%,#ff8a3d 100%);
+  --font-display:'Impact','Haettenschweiler','Arial Narrow Bold','Franklin Gothic Heavy','Arial Black',sans-serif;
+  --font-body:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --font-serif:Georgia,'Times New Roman',serif;
+  --nav-h:64px;
+  --ticker-h:34px;
+  --radius:16px;
+  --shadow:0 18px 50px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + var(--ticker-h) + 12px)}
+body{
+  background:var(--night);
+  color:var(--sand);
+  font-family:var(--font-body);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--pink);color:#fff}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+
+/* film grain overlay */
+.grain{position:fixed;inset:-50%;z-index:2000;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  animation:grainShift 1.6s steps(4) infinite}
+@keyframes grainShift{0%{transform:translate(0,0)}25%{transform:translate(-2%,3%)}50%{transform:translate(3%,-2%)}75%{transform:translate(-3%,-3%)}100%{transform:translate(0,0)}}
+
+.art-credit{font-size:.6rem;letter-spacing:.12em;color:#8b7b9d;text-transform:uppercase;margin-top:.45rem}
+.art-credit a{color:#a897bd;text-decoration:none}
+.art-credit a:hover{color:#fff;text-decoration:underline}
+
+/* ============ TICKER ============ */
+.ticker{position:fixed;top:0;left:0;right:0;height:var(--ticker-h);z-index:1100;
+  background:#000;border-bottom:1px solid var(--line);overflow:hidden;display:flex;align-items:center}
+.ticker-inner{display:flex;gap:0;white-space:nowrap;width:max-content;animation:marquee 36s linear infinite;font-family:var(--font-display);font-size:.72rem;letter-spacing:.14em;color:var(--gold)}
+.ticker:hover .ticker-inner{animation-play-state:paused}
+.ticker-inner span{padding:0 1.1rem}
+.ticker-inner b{color:#fff}
+.ticker-inner .dot{color:var(--pink)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ NAV ============ */
+.nav{position:fixed;top:var(--ticker-h);left:0;right:0;height:var(--nav-h);z-index:1050;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:0 clamp(1rem,3vw,2rem);
+  background:rgba(13,6,22,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+.nav.scrolled{background:rgba(13,6,22,.9);border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;flex-shrink:0}
+.brand-mark{width:38px;height:38px;flex:0 0 38px}
+.brand-text{font-family:var(--font-display);line-height:.92;letter-spacing:.04em}
+.brand-text small{display:block;font-size:.52rem;color:var(--sand);letter-spacing:.18em}
+.brand-text strong{font-size:1.28rem;color:#fff}
+.brand-text strong em{font-style:normal;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:clamp(.6rem,1.6vw,1.4rem);list-style:none}
+.nav-links a{text-decoration:none;font-family:var(--font-display);font-size:.78rem;letter-spacing:.12em;color:var(--muted);padding:.4rem .15rem;border-bottom:2px solid transparent;transition:color .25s,border-color .25s}
+.nav-links a:hover,.nav-links a.active{color:#fff;border-bottom-color:var(--pink)}
+.btn{display:inline-flex;align-items:center;gap:.55rem;border:none;text-decoration:none;
+  font-family:var(--font-display);letter-spacing:.1em;border-radius:10px;
+  padding:.78rem 1.5rem;font-size:.85rem;transition:transform .2s,box-shadow .2s,background .2s,color .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:var(--grad-hot);color:#fff;box-shadow:0 10px 30px rgba(255,46,136,.4),inset 0 1px 0 rgba(255,255,255,.45);text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.btn-primary:hover{box-shadow:0 14px 40px rgba(255,46,136,.55),inset 0 1px 0 rgba(255,255,255,.45)}
+.btn-ghost{background:rgba(13,6,22,.35);color:var(--sand);border:2px solid var(--line-strong)}
+.btn-ghost:hover{border-color:#fff;color:#fff}
+.btn-teal{background:transparent;color:var(--teal);border:2px solid rgba(37,244,238,.45)}
+.btn-teal:hover{background:rgba(37,244,238,.12);border-color:var(--teal)}
+.btn-sm{padding:.55rem 1.1rem;font-size:.75rem}
+.hamburger{display:none;background:none;border:none;color:var(--sand);font-size:1.6rem;line-height:1;padding:.4rem .55rem;border-radius:8px}
+.hamburger:hover{color:#fff;background:rgba(255,255,255,.06)}
+.mobile-menu{display:none;position:fixed;top:calc(var(--nav-h) + var(--ticker-h));left:0;right:0;z-index:1040;background:rgba(13,6,22,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:1rem clamp(1rem,4vw,2rem) 1.5rem}
+.mobile-menu a{display:block;text-decoration:none;font-family:var(--font-display);letter-spacing:.1em;padding:.75rem .25rem;border-bottom:1px solid var(--line);color:var(--sand)}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:#fff;padding-left:.6rem;transition:.25s}
+.mobile-menu.open{display:block;animation:menuDrop .3s ease}
+@keyframes menuDrop{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+
+main{padding-top:calc(var(--nav-h) + var(--ticker-h))}
+.container{width:min(1200px,94vw);margin:0 auto}
+.section{padding:clamp(3.5rem,8vw,6.5rem) 0;position:relative}
+
+/* kicker + headings */
+.kicker{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:.72rem;letter-spacing:.28em;color:var(--teal);text-transform:uppercase;margin-bottom:.9rem}
+.kicker::before,.kicker::after{content:"";width:26px;height:1px;background:linear-gradient(90deg,transparent,var(--teal));opacity:.8}
+.kicker::after{transform:scaleX(-1)}
+h1,h2,h3,.display{font-family:var(--font-display);font-weight:400;letter-spacing:.02em}
+.h2{font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:.98;color:#fff;text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.h2 .accent{background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--muted);font-size:1.05rem;max-width:56ch}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:calc(100svh - var(--nav-h) - var(--ticker-h));display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:url('assets/art-hero.jpg') 74% 16%/cover no-repeat;transform:scale(1.06);animation:heroDrift 22s ease-in-out infinite alternate}
+@keyframes heroDrift{from{transform:scale(1.06) translate(0,0)}to{transform:scale(1.12) translate(-1.6%,2%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(13,6,22,.95) 0%,rgba(13,6,22,.82) 34%,rgba(13,6,22,.34) 62%,rgba(13,6,22,.04) 100%),
+             linear-gradient(0deg,var(--night) 0%,rgba(13,6,22,.55) 12%,transparent 34%),
+             linear-gradient(180deg,rgba(13,6,22,.5) 0%,transparent 18%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.35;pointer-events:none;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 4px)}
+.hero-inner{width:min(1200px,94vw);margin:0 auto;padding:clamp(1.5rem,4vh,3rem) 0 clamp(5rem,9vh,6.5rem)}
+.presenter{font-family:var(--font-display);letter-spacing:.42em;font-size:.68rem;color:var(--sand);opacity:.9;text-transform:uppercase;margin-bottom:1.1rem;display:flex;align-items:center;gap:.75rem}
+.presenter .ps-badge{display:inline-grid;place-items:center;width:26px;height:26px;border:1px solid var(--line-strong);border-radius:6px;font-size:.8rem;color:var(--teal)}
+/* GTA-style logo block */
+.gta-logo{display:inline-block;background:#0b0b0b;border:3px solid #050505;outline:2px solid rgba(247,243,234,.9);box-shadow:6px 6px 0 rgba(0,0,0,.85);padding:.35rem .85rem .45rem;margin-bottom:-.4rem}
+.gta-logo span{display:block;font-family:var(--font-display);color:#f7f3ea;font-size:clamp(1.5rem,3.4vw,2.35rem);line-height:.96;letter-spacing:.06em;text-shadow:3px 3px 0 #000}
+.vi-mark{display:block;font-family:var(--font-display);font-size:clamp(6.2rem,17vw,11.5rem);line-height:.94;letter-spacing:-.02em;
+  background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:2px rgba(18,8,31,.9);
+  filter:drop-shadow(0 14px 34px rgba(255,46,136,.4));user-select:none}
+.tagline{margin:1.1rem 0 1.35rem;font-family:var(--font-serif);font-style:italic;font-size:clamp(1rem,1.6vw,1.18rem);color:#ffd9e8;max-width:44ch;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.release-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-bottom:1.6rem}
+.pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line-strong);background:rgba(13,6,22,.55);backdrop-filter:blur(6px);border-radius:999px;padding:.42rem .85rem;font-family:var(--font-display);font-size:.72rem;letter-spacing:.14em;color:#fff}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 8px var(--pink);animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
+.pill.plat{color:var(--teal);border-color:rgba(37,244,238,.35)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.9rem}
+.loading-link{background:none;border:none;color:var(--teal);font-size:.82rem;letter-spacing:.05em;display:inline-flex;align-items:center;gap:.45rem;margin-top:-.6rem;margin-bottom:1.6rem;padding:.3rem 0;border-bottom:1px dashed rgba(37,244,238,.4)}
+.loading-link:hover{color:#8ffcf8;border-bottom-style:solid}
+/* countdown */
+.countdown{display:flex;gap:.65rem;flex-wrap:wrap}
+.cd-cell{min-width:88px;text-align:center;background:rgba(15,7,28,.78);border:1px solid var(--line-strong);border-radius:14px;padding:.55rem .4rem .6rem;backdrop-filter:blur(8px);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 10px 26px rgba(0,0,0,.4)}
+.cd-num{font-family:var(--font-display);font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+.cd-lab{font-size:.6rem;letter-spacing:.22em;color:var(--muted);margin-top:.3rem;text-transform:uppercase}
+.cd-note{font-size:.68rem;letter-spacing:.18em;color:var(--muted);margin-top:.55rem;text-transform:uppercase}
+/* wanted stars */
+.wanted{display:flex;align-items:center;gap:.5rem;margin-top:1.1rem;opacity:.95}
+.wanted small{font-size:.62rem;letter-spacing:.3em;color:var(--muted)}
+.wanted svg{width:20px;height:20px;fill:#000;stroke:rgba(255,210,63,.55);stroke-width:1.6;animation:starLit 6s infinite}
+.wanted svg:nth-child(2){animation-delay:.4s}.wanted svg:nth-child(3){animation-delay:.8s}
+.wanted svg:nth-child(4){animation-delay:1.2s}.wanted svg:nth-child(5){animation-delay:1.6s}.wanted svg:nth-child(6){animation-delay:2s}
+@keyframes starLit{0%,55%,100%{fill:#241026;filter:none}8%,22%{fill:var(--sun);filter:drop-shadow(0 0 6px rgba(255,196,77,.9))}}
+.hero-credit{position:absolute;right:1.1rem;bottom:.85rem;z-index:2;font-size:.56rem;letter-spacing:.14em;color:rgba(244,226,200,.55);text-transform:uppercase}
+/* scroll cue */
+.scroll-cue{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;color:var(--sand);text-decoration:none;opacity:.85;z-index:2}
+.scroll-cue small{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase}
+.scroll-cue .arrow{width:22px;height:34px;border:2px solid var(--line-strong);border-radius:12px;position:relative}
+.scroll-cue .arrow::after{content:"";position:absolute;top:6px;left:50%;width:4px;height:7px;border-radius:2px;background:var(--sun);transform:translateX(-50%);animation:wheel 1.6s ease-in-out infinite}
+@keyframes wheel{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
+
+/* ============ OVERVIEW ============ */
+.overview{background:linear-gradient(180deg,var(--night) 0%,var(--night-2) 100%)}
+.overview-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.synopsis{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.05rem,1.7vw,1.28rem);line-height:1.55;color:#ffe9d6;border-left:4px solid;border-image:linear-gradient(180deg,var(--sun),var(--pink)) 1;padding-left:1.4rem;margin:1.4rem 0}
+.synopsis cite{display:block;font-size:.72rem;font-style:normal;font-family:var(--font-body);letter-spacing:.18em;color:var(--muted);margin-top:.7rem;text-transform:uppercase}
+.fact-list{list-style:none;margin:1.6rem 0 0;display:grid;gap:.65rem}
+.fact-list li{display:flex;gap:.7rem;align-items:flex-start;color:var(--sand);font-size:.95rem}
+.fact-list svg{flex:0 0 20px;width:20px;height:20px;stroke:var(--teal);margin-top:.15rem}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.stat{background:linear-gradient(160deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.1rem;transition:transform .25s,border-color .25s,box-shadow .25s}
+.stat:hover{transform:translateY(-5px);border-color:rgba(255,210,63,.4);box-shadow:0 18px 44px rgba(0,0,0,.4)}
+.stat b{display:block;font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.4rem);line-height:1;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;margin-top:.45rem;font-size:.78rem;letter-spacing:.06em;color:var(--muted)}
+
+/* ============ STORY ============ */
+.story{background:radial-gradient(1100px 600px at 85% -10%,rgba(214,51,132,.22),transparent 60%),radial-gradient(900px 700px at -10% 110%,rgba(37,244,238,.12),transparent 55%),var(--night-2)}
+.story-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2rem,4.5vw,3.5rem);align-items:start;margin-top:2.2rem}
+/* wanted poster */
+.poster{position:relative;background:#141414;border:10px solid #050505;outline:1px solid var(--line-strong);box-shadow:var(--shadow);overflow:hidden}
+.poster-tag{background:#050505;color:#f7f3ea;font-family:var(--font-display);text-align:center;letter-spacing:.5em;font-size:clamp(1.6rem,3.4vw,2.4rem);padding:.5rem .5rem .3rem;text-indent:.5em}
+.poster-art{position:relative}
+.poster-art img{width:100%;aspect-ratio:1/1.06;object-fit:cover;object-position:50% 12%;filter:contrast(1.03) saturate(1.05)}
+.poster-caption{background:#050505;padding:.7rem .8rem 1rem;text-align:center}
+.poster-caption h3{color:#f7f3ea;font-size:clamp(1.1rem,2.3vw,1.5rem);letter-spacing:.08em}
+.poster-caption p{font-size:.62rem;letter-spacing:.24em;color:#d8cfbd;text-transform:uppercase;margin-top:.25rem}
+.stamp{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%) rotate(-11deg);border:4px double #ff4444;color:#ff5545;font-family:var(--font-display);font-size:clamp(1rem,2.2vw,1.35rem);letter-spacing:.28em;padding:.28rem 1rem;text-indent:.28em;opacity:.92;mix-blend-mode:screen;text-shadow:0 0 12px rgba(255,60,60,.7);pointer-events:none;white-space:nowrap}
+.char-cards{display:grid;gap:1rem;margin-top:1.6rem}
+.char-card{display:grid;grid-template-columns:auto 1fr;gap:1rem;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.2rem;transition:border-color .25s,transform .25s}
+.char-card:hover{border-color:rgba(255,46,136,.45);transform:translateX(6px)}
+.avatar{width:64px;height:64px;border-radius:12px;display:grid;place-items:center;font-family:var(--font-display);font-size:1.7rem;color:#12081f;background:var(--grad-sun);box-shadow:inset 0 -6px 0 rgba(0,0,0,.18)}
+.char-card:nth-child(2) .avatar{background:linear-gradient(160deg,#25f4ee,#0e9aa0)}
+.char-card h3{color:#fff;font-size:1.25rem;letter-spacing:.06em}
+.char-card h3 small{font-family:var(--font-body);font-weight:600;font-size:.62rem;letter-spacing:.22em;color:var(--pink);display:block;margin-bottom:.15rem}
+.char-card p{font-size:.9rem;color:#d9cfe6;margin-top:.35rem}
+.char-card em{color:var(--sun);font-style:italic}
+/* in-game capture polaroids */
+.shot-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.4rem;align-items:start}
+.shot{background:#f7f3ea;padding:.55rem .55rem .75rem;box-shadow:var(--shadow);transform:rotate(-1.3deg);transition:transform .3s}
+.shot:nth-child(2){transform:rotate(1.1deg) translateY(10px)}
+.shot:nth-child(3){transform:rotate(-.6deg)}
+.shot:hover{transform:rotate(0) translateY(-6px) scale(1.02);z-index:2}
+.shot img{width:100%;aspect-ratio:16/10.5;object-fit:cover;border:1px solid rgba(0,0,0,.15)}
+.shot figcaption{font-family:var(--font-serif);font-style:italic;font-size:.72rem;color:#2b2118;padding:.45rem .25rem 0;line-height:1.45}
+.shot small{display:block;font-family:var(--font-body);font-style:normal;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:#8a7a63;margin-top:.2rem}
+
+/* ============ LEONIDA MAP ============ */
+.leonida{background:var(--night)}
+.map-grid{display:grid;grid-template-columns:1fr 380px;gap:clamp(1.5rem,4vw,3rem);margin-top:2.2rem;align-items:stretch}
+.map-panel{position:relative;background:radial-gradient(600px 500px at 50% 40%,#1d1233 0%,#120a22 70%);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:430px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;padding:2.4rem 1rem 1rem}
+.map-panel::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(244,226,200,.09) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+.map-title{position:absolute;top:1rem;left:1.1rem;font-family:var(--font-display);letter-spacing:.3em;font-size:.85rem;color:rgba(244,226,200,.75)}
+.compass{display:none}
+.leonida-map-img{width:100%;max-width:560px;height:auto;position:relative;border-radius:12px;border:1px solid var(--line-strong);box-shadow:var(--shadow);background:#10314f}
+.map-credit{font-size:.6rem;letter-spacing:.12em;color:#8b7b9d;text-transform:uppercase;text-align:center;max-width:560px;margin:.6rem auto 0;line-height:1.7}
+.region-panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;display:flex;flex-direction:column;gap:.55rem}
+.region-num{font-family:var(--font-display);color:var(--pink);letter-spacing:.3em;font-size:.7rem}
+.region-panel h3{font-size:clamp(1.6rem,2.6vw,2.2rem);color:#fff;letter-spacing:.04em}
+.region-tag{font-family:var(--font-serif);font-style:italic;color:var(--sun);font-size:.92rem}
+.region-panel p{font-size:.93rem;color:#d9cfe6}
+.known{margin-top:.2rem}
+.known small{font-size:.62rem;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.known ul{list-style:none;margin-top:.35rem;display:grid;gap:.3rem}
+.known li{font-size:.86rem;color:var(--sand);padding-left:1.1rem;position:relative}
+.known li::before{content:"▸";position:absolute;left:0;color:var(--teal)}
+.heat{display:flex;align-items:center;gap:.6rem;margin-top:auto;border-top:1px solid var(--line);padding-top:.8rem}
+.heat small{font-size:.62rem;letter-spacing:.26em;color:var(--muted)}
+.heat .stars{color:var(--sun);letter-spacing:.14em;font-size:1.05rem;text-shadow:0 0 8px rgba(255,210,63,.6)}
+.heat .stars .off{color:#3a2a52;text-shadow:none}
+.region-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.chip{background:transparent;border:1px solid var(--line-strong);color:var(--sand);border-radius:999px;padding:.38rem .8rem;font-size:.72rem;letter-spacing:.08em;transition:.2s}
+.chip:hover{border-color:var(--gold);color:#fff}
+.chip.active{background:var(--grad-hot);border-color:transparent;color:#fff}
+
+/* ============ MEDIA ============ */
+.media{background:linear-gradient(180deg,var(--night) 0%,#150a24 100%)}
+.extended-banner{position:relative;border-radius:var(--radius);overflow:hidden;margin:2rem 0 .5rem;border:1px solid var(--line-strong);box-shadow:var(--shadow);background:#050510}
+.extended-banner img{width:100%;height:clamp(230px,32vw,360px);object-fit:cover;object-position:50% 30%}
+.extended-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,6,22,.94) 0%,rgba(13,6,22,.6) 45%,rgba(13,6,22,.08) 78%)}
+.eb-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:.55rem;padding:clamp(1.2rem,3vw,2.2rem);z-index:1;max-width:640px}
+.eb-content small{font-size:.62rem;letter-spacing:.3em;color:var(--teal);text-transform:uppercase}
+.eb-content h3{font-size:clamp(1.5rem,3.6vw,2.4rem);color:#fff;line-height:1}
+.eb-content p{font-size:.9rem;color:#e7dcf4;max-width:48ch}
+.eb-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.35rem}
+.video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+.video-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:transform .25s,border-color .25s}
+.video-card:hover{transform:translateY(-6px);border-color:rgba(255,210,63,.4)}
+.thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(140deg,#2b1740,#160b26);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.video-card:hover .thumb img{transform:scale(1.05)}
+.play{position:absolute;inset:0;display:grid;place-items:center;background:rgba(10,4,20,.25)}
+.play-btn{width:56px;height:56px;border-radius:50%;background:rgba(13,6,22,.78);border:2px solid rgba(255,255,255,.85);display:grid;place-items:center;transition:transform .25s,background .25s}
+.video-card:hover .play-btn,.video-card:focus-visible .play-btn{transform:scale(1.18);background:var(--pink);border-color:#fff}
+.video-info{padding:.85rem .9rem 1rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.video-info small{font-size:.6rem;letter-spacing:.2em;color:var(--teal);text-transform:uppercase}
+.video-info h4{color:#fff;font-size:.95rem;letter-spacing:.02em;line-height:1.3;font-family:var(--font-body);font-weight:700}
+.video-info p{font-size:.78rem;color:var(--muted)}
+.video-info .song{font-size:.72rem;color:var(--gold);border-top:1px solid var(--line);padding-top:.45rem;margin-top:.15rem}
+.open-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.7rem;color:var(--muted);text-decoration:none;letter-spacing:.08em;margin-top:auto;padding-top:.4rem}
+.open-link:hover{color:#fff;text-decoration:underline}
+
+/* ============ EDITIONS ============ */
+.editions{background:var(--night-2)}
+.box-banner{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-strong);margin-top:1.6rem;box-shadow:var(--shadow);background:#241433}
+.box-banner img{width:100%;height:auto;display:block}
+.currency-toggle{display:inline-flex;gap:.3rem;background:#0a0416;border:1px solid var(--line);padding:.3rem;border-radius:10px;margin:1.4rem 0 .4rem}
+.currency-toggle button{background:transparent;border:none;color:var(--muted);font-family:var(--font-display);letter-spacing:.12em;padding:.4rem .9rem;border-radius:8px;font-size:.75rem}
+.currency-toggle button.active{background:var(--pink);color:#fff}
+.edition-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1rem}
+.edition{position:relative;background:linear-gradient(165deg,var(--panel-2),var(--panel));border:1px solid var(--line-strong);border-radius:var(--radius);padding:1.6rem 1.5rem 1.4rem;display:flex;flex-direction:column}
+.edition.ultimate{border:2px solid transparent;background:linear-gradient(var(--panel-2),var(--panel)) padding-box,var(--grad-hot) border-box}
+.ribbon{position:absolute;top:-14px;right:1.2rem;background:var(--grad-hot);color:#fff;font-family:var(--font-display);letter-spacing:.2em;font-size:.66rem;padding:.35rem .9rem;border-radius:6px;box-shadow:0 6px 18px rgba(255,46,136,.5)}
+.edition small.kicker2{font-size:.62rem;letter-spacing:.28em;color:var(--teal);text-transform:uppercase}
+.edition h3{font-size:1.9rem;color:#fff;margin:.3rem 0 .1rem}
+.price{font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.4rem);line-height:1;color:#fff;margin:.4rem 0 .1rem}
+.price sub{font-size:.9rem;vertical-align:.9em;color:var(--muted)}
+.price-note{font-size:.72rem;color:var(--muted)}
+.edition ul{list-style:none;margin:1rem 0 1.2rem;display:grid;gap:.5rem}
+.edition li{display:flex;gap:.6rem;align-items:flex-start;font-size:.88rem;color:#e3d9ef}
+.edition li svg{flex:0 0 18px;width:18px;height:18px;margin-top:.1rem}
+.edition .tick{stroke:var(--teal)}
+.edition .cross{stroke:#6b5878}
+.edition li.dim{color:#8b7b9d}
+.editions-note{margin-top:1.2rem;border:1px dashed var(--line-strong);border-radius:12px;padding:.8rem 1.1rem;color:var(--muted);font-size:.82rem}
+.editions-note a{color:var(--teal);text-decoration:none}
+.editions-note a:hover{text-decoration:underline}
+.bonus-strip{margin-top:1.2rem;display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:center;background:linear-gradient(120deg,rgba(255,210,63,.12),rgba(255,46,136,.1));border:1px solid rgba(255,210,63,.35);border-radius:var(--radius);padding:1.1rem 1.3rem}
+.bonus-badge{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 35%,#ffd23f,#b87a12);color:#231200;font-family:var(--font-display);text-align:center;font-size:.68rem;line-height:1.15;letter-spacing:.06em;box-shadow:0 0 24px rgba(255,210,63,.35)}
+.bonus-strip h4{color:var(--gold);letter-spacing:.08em;font-size:1rem}
+.bonus-strip p{font-size:.85rem;color:#ead9b8}
+.fineprint{margin-top:1rem;font-size:.7rem;color:var(--muted);display:grid;gap:.25rem}
+.fineprint a{color:var(--teal)}
+.compare{width:100%;border-collapse:collapse;margin-top:1.6rem;font-size:.84rem;overflow:hidden;border-radius:12px}
+.compare th,.compare td{padding:.65rem .8rem;text-align:left;border-bottom:1px solid var(--line)}
+.compare thead th{background:#0a0416;color:var(--teal);letter-spacing:.12em;font-size:.68rem;text-transform:uppercase}
+.compare tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
+.compare td:first-child{color:var(--muted)}
+
+/* ============ PS5 ============ */
+.ps5{background:radial-gradient(1000px 520px at 15% 0%,rgba(37,244,238,.08),transparent 55%),var(--night);overflow:hidden}
+.ps5-mark{position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-family:var(--font-display);font-size:clamp(9rem,26vw,20rem);color:transparent;-webkit-text-stroke:1.5px rgba(37,244,238,.14);user-select:none;pointer-events:none;line-height:1}
+.ps5-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2rem}
+.ps-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+.ps-card h3{font-size:1.05rem;letter-spacing:.14em;color:#fff;display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.ps-card ul{list-style:none;display:grid;gap:.55rem}
+.ps-card li{display:flex;gap:.55rem;font-size:.88rem;color:#dcd2ea}
+.ps-card li b{color:#fff;font-weight:600}
+.dot-ok{color:var(--teal);font-weight:700}
+.dot-tba{color:var(--orange);font-weight:700}
+.netflix-strip{margin-top:1.2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;border:1px solid rgba(255,46,136,.4);background:rgba(255,46,136,.08);border-radius:var(--radius);padding:1rem 1.3rem}
+.netflix-strip p{font-size:.9rem;color:#f2d8ea}
+.netflix-strip b{color:#fff}
+
+/* ============ TIMELINE ============ */
+.timeline-sec{background:var(--night-2)}
+.timeline{position:relative;margin-top:2.2rem;padding-left:2rem;border-left:2px solid transparent;border-image:linear-gradient(180deg,var(--sun),var(--pink),var(--teal)) 1}
+.tl-item{position:relative;padding:0 0 1.5rem 1.4rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-2.46rem;top:.35rem;width:13px;height:13px;border-radius:50%;background:var(--night-2);border:3px solid var(--pink);box-shadow:0 0 10px rgba(255,46,136,.6)}
+.tl-item.live::before{border-color:var(--sun);box-shadow:0 0 12px rgba(255,210,63,.8)}
+.tl-date{font-family:var(--font-display);font-size:.7rem;letter-spacing:.22em;color:var(--teal);text-transform:uppercase}
+.tl-item h3{color:#fff;font-size:1.05rem;margin:.2rem 0 .25rem;letter-spacing:.03em}
+.tl-item p{font-size:.88rem;color:var(--muted);max-width:72ch}
+.tl-item.live h3{color:var(--gold)}
+
+/* ============ FAQ ============ */
+.faq{background:var(--night)}
+.faq-wrap{max-width:880px;margin:2rem auto 0}
+.faq-item{border:1px solid var(--line);border-radius:12px;background:var(--panel);margin-bottom:.7rem;overflow:hidden}
+.faq-q{width:100%;background:none;border:none;color:#fff;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.05rem 1.2rem;font-size:1rem;font-weight:700}
+.faq-q .plus{font-family:var(--font-display);font-size:1.3rem;color:var(--pink);transition:transform .3s;flex:0 0 auto}
+.faq-item.open .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-a{max-height:400px}
+.faq-a-inner{padding:0 1.2rem 1.1rem;color:#d9cfe6;font-size:.92rem;border-top:1px solid var(--line);padding-top:.85rem}
+.faq-a-inner a{color:var(--teal)}
+
+/* ============ NEWSLETTER / CTA ============ */
+.presave{background:linear-gradient(120deg,#1c0b2e,#33102e 55%,#0f2b33);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.presave-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;padding:clamp(2rem,5vw,3rem) 0}
+.presave h2{font-size:clamp(1.6rem,3.6vw,2.4rem);color:#fff;line-height:1.05}
+.presave p{color:var(--muted);font-size:.9rem;max-width:52ch;margin-top:.4rem}
+.news-form{display:flex;gap:.6rem;flex-wrap:wrap}
+.news-form input{background:#0a0416;border:1px solid var(--line-strong);border-radius:10px;color:#fff;padding:.8rem 1rem;min-width:min(280px,80vw);font-size:.95rem}
+.news-form input::placeholder{color:#6f5f87}
+
+/* ============ FOOTER ============ */
+.footer{background:#08030f;padding:3rem 0 1.5rem;font-size:.82rem;color:var(--muted)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+.footer h5{font-family:var(--font-display);letter-spacing:.24em;font-size:.68rem;color:var(--sand);margin-bottom:.6rem;text-transform:uppercase}
+.footer a{color:var(--muted);text-decoration:none;display:block;padding:.18rem 0;transition:color .2s}
+.footer a:hover{color:#fff}
+.footer-logo{font-family:var(--font-display);font-size:1.4rem;color:#f7f3ea;letter-spacing:.06em;margin-bottom:.5rem}
+.footer-logo em{font-style:normal;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent}
+.legal{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.2rem;font-size:.68rem;line-height:1.7;color:#7d6f92}
+.legal b{color:#b7a6cd}
+.back-top{position:fixed;right:1.1rem;bottom:1.1rem;z-index:1000;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-strong);background:rgba(22,11,38,.9);backdrop-filter:blur(6px);color:var(--sun);font-size:1.3rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(10px)}
+.back-top.show{opacity:1;pointer-events:auto;transform:none}
+.back-top:hover{border-color:var(--sun);box-shadow:0 0 18px rgba(255,210,63,.35)}
+
+/* ============ TOAST ============ */
+.toast{position:fixed;left:50%;bottom:1.6rem;transform:translate(-50%,20px);z-index:1500;background:#0a0416;border:1px solid var(--teal);color:#a9fff9;padding:.75rem 1.4rem;border-radius:999px;font-size:.88rem;opacity:0;pointer-events:none;transition:.35s;box-shadow:0 10px 40px rgba(37,244,238,.2);max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ============ PS5 LOADING SCREEN MODAL ============ */
+.modal{position:fixed;inset:0;z-index:1600;display:none;align-items:center;justify-content:center;background:#000}
+.modal.open{display:flex;animation:modalIn .35s ease}
+@keyframes modalIn{from{opacity:0}to{opacity:1}}
+.loading-screen{position:absolute;inset:0;background:url('assets/art-cover-front.jpg') 50% 18%/cover no-repeat}
+.loading-screen::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,2,10,.82) 0%,rgba(5,2,10,.42) 35%,rgba(5,2,10,.42) 62%,rgba(5,2,10,.9) 100%)}
+.loading-screen::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 4px);pointer-events:none}
+.ls-top{position:absolute;top:1.1rem;left:1.4rem;right:1.4rem;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+.ls-logo{font-family:var(--font-display);color:#f7f3ea;font-size:.8rem;letter-spacing:.14em;line-height:1.2;text-shadow:2px 2px 0 #000,0 0 18px #000}
+.ls-logo strong{display:block;font-size:1.6rem;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:.6px rgba(0,0,0,.6)}
+.ls-chips{display:flex;gap:.5rem;align-items:center}
+.ls-chip{border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:.3rem .6rem;font-family:var(--font-display);font-size:.66rem;letter-spacing:.16em;color:#fff;background:rgba(0,0,0,.5)}
+.ls-close{background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.4);color:#fff;width:42px;height:42px;border-radius:50%;font-size:1.15rem;transition:.2s}
+.ls-close:hover{background:var(--pink);border-color:var(--pink);transform:rotate(90deg)}
+.ls-center{position:absolute;left:0;right:0;top:38%;text-align:center;padding:0 1rem}
+.ls-loading{font-family:var(--font-display);letter-spacing:.5em;text-indent:.5em;font-size:.85rem;color:#ffd9e8;text-transform:uppercase;opacity:.9;text-shadow:0 2px 8px #000}
+.ls-percent{font-family:var(--font-display);font-size:clamp(4rem,14vw,8rem);line-height:1;color:transparent;background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 6px 26px rgba(255,94,91,.45));margin:.4rem 0 .6rem;font-variant-numeric:tabular-nums}
+.ls-bar{width:min(560px,84vw);height:10px;margin:0 auto;border-radius:999px;background:rgba(255,255,255,.2);overflow:hidden;box-shadow:inset 0 1px 3px rgba(0,0,0,.6)}
+.ls-fill{height:100%;width:0%;background:var(--grad-hot);border-radius:999px;transition:width .18s linear;box-shadow:0 0 16px rgba(255,46,136,.8)}
+.ls-press{margin-top:.9rem;font-family:var(--font-display);letter-spacing:.34em;text-indent:.34em;color:#fff;font-size:.95rem;opacity:0;text-transform:uppercase;transition:opacity .3s;animation:pressBlink 1s steps(2) infinite;text-shadow:0 2px 8px #000}
+.ls-press.show{opacity:1}
+@keyframes pressBlink{50%{opacity:.35}}
+.ls-tip{position:absolute;bottom:2.6rem;left:0;right:0;text-align:center;padding:0 1.5rem}
+.ls-tip small{font-size:.6rem;letter-spacing:.34em;color:var(--teal);text-transform:uppercase;display:block;margin-bottom:.3rem;text-shadow:0 2px 6px #000}
+.ls-tip p{font-family:var(--font-serif);font-style:italic;color:#fff;font-size:clamp(.9rem,1.8vw,1.08rem);min-height:1.6em;text-shadow:0 2px 8px #000}
+.ls-foot{position:absolute;bottom:.9rem;left:1.4rem;right:1.4rem;display:flex;justify-content:space-between;gap:1rem;font-size:.58rem;letter-spacing:.18em;color:rgba(244,226,200,.75);text-transform:uppercase;text-shadow:0 1px 4px #000}
+.ls-credit{position:absolute;bottom:.9rem;left:50%;transform:translateX(-50%);display:none}
+
+/* ============ GTA V MIDDLE-FINGER CURSOR (user-supplied GTA V artwork) ============ */
+*{cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAgCAYAAADnnNMGAAADhUlEQVR42rWWS1LjTBCEv+rWw1bYHgwsucM/d2HFyTgEKzZcgC3nYAGBX2FLlvtR/8JujW1gGAYmIxSW5FB3VlZ2Vcl0OiWEQFmWDAYDAObzOTFGRsMRNrMAvLy8YIzh9PRUAUSEp6cnERGKomAwGCAiTKdTAKqqoigKADJVxRiDMQYAVSUtEmLAst3k8vJSy7Lk9vaWhKurK725uRERASDGiIigqt06qopMJhMSm7SZ957NZkNVVSQSRVFoWijBGMNisRBrLVmWYY1lVa/Isqwjba1FYoyoKpvNhvV6DcBwMMRYQ9M0bDYbVLWT6XgT77yEGKjrGhFhOBwiIjRNQ9u2iAhGVQ9CVFWM3bIIIaCqBwsfw1hz8K2IICKddCEE5Pn5GRGhqir6/T4As9kM5xyj0YiyLIkxYq19M5LJZCJVVVGWJarKbDbDe0+v12M4HO6IWIu1lhDCQfLyPCfP899GkbBer7cRh+23WZZ16gCYGGNn4U5n7wkh4L3farpL4lvw3ndWFbNdOMmcXNcl3jnXJe/Hjx/EEGnWDd57AMbj8ZtyxRhFVVkulzjnODs7I/iA8462bYkxkqXdDnwtghjh5OREP5LLGKPpfjqdyn5E3nuMMWRJLmMMeZ4TQsA5R1EUGkLoQn5Psn0S1lpNZOu6lqIotjmaz+cAXVmJMZLeaVTECp9BSrj3nqpfYawh22eUWPwtUnXYKZNyKAC6f61WqySBeuc1xqgxxu7/9Jze7T+LiBpjNMaoqqqTyUQBzQAGg0Gneaq2xyjLkl6vd/AuHbb9SPaNlO4B9O7u7hXj40j+5BIRFZHueTqd/orkLbf87gC+h1Q1Xtn84eFBrq+vubi4OAjvO2F+/veTl5cXHh8fv+yud22drNu2LVVVaVfut72iK/t/g/l8zng8/tV+9/vK8Un+KrLFYoGq0uv1/plcJnW+3a/sDxXfFsl+H3HOfR/7Hdm2bSVLLbdtW+q6flXovoq6rjExRLz3XeLn87lsNhsREWL4evJFhKxualSVLMuoqgqApmm+TbbhcEiW+niMkTzPPxyB/gTOuW40EhFM0n7Xrw9GnX7V/7TTVJWyLFkul+Kckxji4QTZti2qymg0Auha8GciU1WstdR1LWmCzPaLove+m8GstZ277u/vP7XJcVWX2WzWnXhrbWdn7z3n5+f6Xvn+CKvVSvr9Pt57/gfWo9l+l74nsAAAAABJRU5ErkJggg==") 13 0, auto}
+
+/* ============ LEONIDA RADIO — GTA-style station tuner ============ */
+.radio{position:fixed;right:1.1rem;bottom:5.3rem;z-index:1000;display:flex;align-items:center;gap:.6rem;border:1px solid var(--line-strong);background:rgba(22,11,38,.93);backdrop-filter:blur(8px);border-radius:18px;padding:.5rem .6rem .5rem .7rem;color:var(--sand);box-shadow:0 10px 34px rgba(0,0,0,.6);max-width:min(340px,92vw)}
+.radio.playing{border-color:var(--pink);box-shadow:0 0 26px rgba(255,46,136,.45),0 10px 34px rgba(0,0,0,.6)}
+.eq{display:flex;align-items:flex-end;gap:3px;height:20px;flex:0 0 auto}
+.eq i{width:4px;border-radius:2px;background:var(--pink);height:6px;animation:eqBounce .9s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:.17s;background:var(--sun);animation-duration:.74s}
+.eq i:nth-child(3){animation-delay:.34s;background:var(--teal);animation-duration:1.05s}
+.eq i:nth-child(4){animation-delay:.09s;background:var(--hot);animation-duration:.82s}
+@keyframes eqBounce{0%,100%{height:5px}50%{height:20px}}
+.radio:not(.playing) .eq i{animation-play-state:paused;height:4px;opacity:.35}
+.radio-info{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.radio-info b{font-family:var(--font-display);font-size:.6rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;font-weight:400;white-space:nowrap}
+.radio-info small{font-size:.62rem;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:170px}
+.radio-info em{font-style:normal;font-size:.54rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:170px;letter-spacing:.06em}
+.radio-btns{display:flex;gap:.35rem;flex:0 0 auto}
+.radio-btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--line-strong);background:rgba(13,6,22,.6);color:var(--sand);display:grid;place-items:center;transition:border-color .2s,color .2s,transform .2s}
+.radio-btn:hover{border-color:var(--sun);color:#fff;transform:translateY(-2px)}
+.radio-btn.power[aria-pressed="true"]{border-color:var(--pink);color:#fff;box-shadow:0 0 14px rgba(255,46,136,.5)}
+.radio-btn svg{width:17px;height:17px}
+.tap-for-sound{position:absolute;bottom:calc(100% + 9px);right:0;background:var(--gold);color:#241200;font-family:var(--font-display);letter-spacing:.18em;font-size:.56rem;padding:.32rem .55rem;border-radius:8px;display:none;white-space:nowrap;text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.5);animation:hintBob 1.25s ease-in-out infinite}
+.tap-for-sound.show{display:block}
+@keyframes hintBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (max-width:560px){.radio-info small,.radio-info em{max-width:130px}.radio{bottom:5rem}}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1080px){
+  .video-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .ps5-cols{grid-template-columns:1fr}
+}
+@media (max-width:940px){
+  .nav-links,.nav .btn{display:none}
+  .hamburger{display:block}
+  .overview-grid,.story-grid,.map-grid{grid-template-columns:1fr}
+  .map-panel{min-height:380px}
+  .edition-grid{grid-template-columns:1fr}
+  .ps5-mark{opacity:.5}
+  .shot-strip{grid-template-columns:1fr;max-width:520px}
+  .shot:nth-child(2){transform:rotate(1.1deg)}
+}
+@media (max-width:560px){
+  .video-grid{grid-template-columns:1fr}
+  .stat-grid{grid-template-columns:1fr 1fr;gap:.6rem}
+  .cd-cell{min-width:70px;padding:.45rem .3rem}
+  .hero-inner{padding-bottom:6rem}
+  .currency-toggle{width:100%;justify-content:space-between}
+  .compare{display:block;overflow-x:auto;white-space:nowrap}
+  .footer-grid{grid-template-columns:1fr}
+  .hero-credit{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.15s!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ TOP TICKER ══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="tickerInner">
+    <span><b>GTA VI</b> LAUNCHES <b>NOV 19 2026</b></span><span class="dot">★</span>
+    <span>PS5 · PS5 PRO · XBOX SERIES X|S</span><span class="dot">★</span>
+    <span><b>AN EXTENDED LOOK</b> — 26 MIN OF GAMEPLAY</span><span class="dot">★</span>
+    <span>LAUNCH TRAILER <b>OUT NOW</b></span><span class="dot">★</span>
+    <span>STANDARD <b>$79.99</b> · ULTIMATE <b>$99.99</b></span><span class="dot">★</span>
+    <span>WELCOME TO THE STATE OF <b>LEONIDA</b></span><span class="dot">★</span>
+  </div>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="GTA VI — home">
+    <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="GTA VI sunset logo">
+      <rect width="64" height="64" rx="12" fill="#120a24"/>
+      <circle cx="32" cy="32" r="15" fill="#ff9a3c"/>
+      <rect x="13" y="30.5" width="38" height="3.2" fill="#120a24"/>
+      <rect x="13" y="37.6" width="38" height="3.2" fill="#120a24"/>
+      <rect x="9" y="48" width="46" height="2.6" fill="#ff2e88"/>
+      <rect x="13" y="53.6" width="38" height="2" fill="#ff2e88" opacity=".7"/>
+    </svg>
+    <span class="brand-text"><small>GRAND THEFT AUTO</small><strong><em>VI</em> · LEONIDA</strong></span>
+  </a>
+  <nav aria-label="Primary">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#overview">OVERVIEW</a></li>
+      <li><a href="#story">STORY</a></li>
+      <li><a href="#leonida">LEONIDA</a></li>
+      <li><a href="#media">TRAILERS</a></li>
+      <li><a href="#editions">EDITIONS</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-primary btn-sm" href="#editions">NOV 19 ★</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#overview">OVERVIEW</a>
+  <a href="#story">STORY — JASON &amp; LUCIA</a>
+  <a href="#leonida">EXPLORE LEONIDA</a>
+  <a href="#media">TRAILERS &amp; AN EXTENDED LOOK</a>
+  <a href="#editions">EDITIONS &amp; PRICES</a>
+  <a href="#ps5">PS5 FEATURES</a>
+  <a href="#news">ROAD TO LAUNCH</a>
+  <a href="#faq">FAQ</a>
+</div>
+
+<main id="top">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" aria-label="Grand Theft Auto VI hero">
+  <div class="hero-bg" role="img" aria-label="Official GTA VI key art: Jason and Lucia sitting on a muscle car outside a beach hotel at sunset"></div>
+  <div class="hero-inner">
+    <p class="presenter"><span class="ps-badge">★</span> A ROCKSTAR GAMES OPEN WORLD</p>
+
+    <h1 aria-label="Grand Theft Auto VI">
+      <span class="gta-logo" aria-hidden="true"><span>GRAND</span><span>THEFT</span><span>AUTO</span></span>
+      <span class="vi-mark" aria-hidden="true">VI</span>
+    </h1>
+
+    <p class="tagline">“Jason and Lucia have always known the deck is stacked against them.” Ride into the darkest side of the sunniest place in America.</p>
+
+    <div class="release-row">
+      <span class="pill"><span class="dot"></span> LAUNCHING THU · NOV 19 · 2026</span>
+      <span class="pill plat">PS5</span>
+      <span class="pill plat">PS5 PRO</span>
+      <span class="pill plat">XBOX SERIES X|S</span>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#media">▶&nbsp; WATCH THE TRAILERS</a>
+      <a class="btn btn-ghost" href="#editions">SEE THE EDITIONS</a>
+    </div>
+    <button class="loading-link" id="openLoading">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+      BOOT THE PS5 LOADING SCREEN →
+    </button>
+
+    <div class="countdown" id="countdown" role="timer" aria-label="Countdown to Grand Theft Auto VI launch">
+      <div class="cd-cell"><div class="cd-num" id="cdDays">00</div><div class="cd-lab">Days</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdHours">00</div><div class="cd-lab">Hours</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdMins">00</div><div class="cd-lab">Minutes</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdSecs">00</div><div class="cd-lab">Seconds</div></div>
+    </div>
+    <p class="cd-note">…until the state of Leonida opens its doors</p>
+
+    <div class="wanted" aria-hidden="true">
+      <small>WANTED</small>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#overview" aria-label="Scroll to overview">
+    <div class="arrow"></div>
+    <small>Scroll</small>
+  </a>
+  <span class="hero-credit">Key Art © Rockstar Games</span>
+</section>
+
+<!-- ══════════ OVERVIEW ══════════ -->
+<section class="section overview" id="overview" aria-labelledby="ov-title">
+  <div class="container">
+    <span class="kicker">The Game</span>
+    <div class="overview-grid">
+      <div>
+        <h2 class="h2" id="ov-title">WELCOME TO<br /><span class="accent">THE STATE OF LEONIDA</span></h2>
+        <blockquote class="synopsis">
+          Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America — in the middle of a conspiracy stretching across the state of Leonida.
+          <cite>— Official Rockstar Games synopsis</cite>
+        </blockquote>
+        <ul class="fact-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Two protagonists, one destiny.</strong> Seamlessly swap between Jason and Lucia — or ride through Leonida together.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Lucia Caminos</strong> is the <strong>first playable female protagonist</strong> in Grand Theft Auto history.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Set in <strong>Vice City</strong> and the wider <strong>state of Leonida</strong> — the Keys, Grassrivers, Port Gellhorn and Ambrosia.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Launches <strong>November 19, 2026</strong> on <strong>PS5, PS5 Pro and Xbox Series X|S</strong>. A PC version has not been announced.</span></li>
+        </ul>
+      </div>
+      <div class="stat-grid" aria-label="GTA VI key facts">
+        <div class="stat"><b>11·19</b><span>Launch date — Thursday, November 19, 2026. Pre-load live since Nov 10.</span></div>
+        <div class="stat"><b>2</b><span>Dual protagonists — Jason Duval &amp; Lucia Caminos, first female lead.</span></div>
+        <div class="stat"><b>$79.99</b><span>Standard Edition. Ultimate Edition $99.99 (+$20 upgrade). Both incl. 30 days GTA+.</span></div>
+        <div class="stat"><b>475M</b><span>Views in 24 hours for Trailer 2 — among the most-watched gaming reveals ever.</span></div>
+        <div class="stat"><b>26<span style="font-size:.5em">min</span></b><span>“An Extended Look” — pure gameplay, captured on a standard PS5, premiered on Netflix.</span></div>
+        <div class="stat"><b>6★</b><span>Wanted levels return. Six stars. Helicopters. You have been warned.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STORY ══════════ -->
+<section class="section story" id="story" aria-labelledby="story-title">
+  <div class="container">
+    <span class="kicker">The Story</span>
+    <h2 class="h2" id="story-title">A MODERN-DAY<br /><span class="accent">BONNIE &amp; CLYDE</span></h2>
+    <p class="lede" style="margin-top:.7rem">Two small-time hustlers. One impossible conspiracy. Everything in Leonida — the sun, the salt air, the law — is stacked against them.</p>
+
+    <div class="story-grid">
+      <!-- Wanted poster -->
+      <figure class="poster" aria-label="Wanted poster for Jason Duval and Lucia Caminos">
+        <div class="poster-tag">WANTED</div>
+        <div class="poster-art">
+          <img src="assets/art-wanted.jpg" alt="Official GTA VI key art: Lucia and Jason on the beach at sunset, Vice City skyline behind them — Lucia holds a semi-automatic pistol at Jason's chest" loading="lazy" />
+          <div class="stamp">ARMED &amp; DANGEROUS</div>
+        </div>
+        <figcaption class="poster-caption">
+          <h3>JASON &amp; LUCIA</h3>
+          <p>Last seen · Vice City · Approach with caution</p>
+        </figcaption>
+      </figure>
+
+      <!-- Characters -->
+      <div>
+        <div class="char-cards">
+          <article class="char-card">
+            <div class="avatar" aria-hidden="true">J</div>
+            <div>
+              <h3><small>PROTAGONIST 01</small>JASON DUVAL</h3>
+              <p>Grew up around grifters and never really left the life. Army veteran — note the paratrooper tattoo — now drifting through the Leonida Keys, working for <em>local drug runners</em> and living rent-free at Brian Heder’s place. He wants the easy life. <em>Meeting Lucia could be the best — or worst — thing that ever happened to him.</em></p>
+            </div>
+          </article>
+          <article class="char-card">
+            <div class="avatar" aria-hidden="true">L</div>
+            <div>
+              <h3><small>PROTAGONIST 02 · FIRST PLAYABLE FEMALE LEAD</small>LUCIA CAMINOS</h3>
+              <p>From Liberty City to Leonida Penitentiary — “fighting for her family” put her inside, and sheer luck walked her out. Taught to fight by her father from a young age. All she wants is the good life her mom has dreamed of since Liberty City… <em>but Lucia is prepared to take matters into her own hands.</em></p>
+            </div>
+          </article>
+        </div>
+        <blockquote class="synopsis" style="margin-top:1.6rem">
+          “When an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America — in the middle of a conspiracy stretching across the state of Leonida, forced to rely on each other more than ever if they want to make it out alive.”
+          <cite>— Rockstar Games · Official Launch Story</cite>
+        </blockquote>
+        <p class="art-credit">Poster: Official key art © Rockstar Games</p>
+      </div>
+    </div>
+
+    <!-- In-game capture polaroids -->
+    <div class="shot-strip" aria-label="In-game screenshots">
+      <figure class="shot">
+        <img src="assets/shot-heist.jpg" alt="In-game capture: Lucia firing a submachine gun from a car during a daylight heist in Vice City" loading="lazy" />
+        <figcaption>“He’s fired up, she’s locked in — the gala job goes about as well as you’d expect.”<small>In-game capture · © Rockstar Games</small></figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/shot-convertible.jpg" alt="In-game capture: Lucia and Jason in a white convertible cruising Vice City with a Sprunk cup" loading="lazy" />
+        <figcaption>“Vice City traffic: 10% speeding, 90% vibes.”<small>In-game capture · © Rockstar Games</small></figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/shot-greencar.jpg" alt="In-game capture: Jason and Lucia posing by a vintage green sports car under palm trees" loading="lazy" />
+        <figcaption>“The ’63 green coupe — Ocean Beach will notice you today.”<small>In-game capture · © Rockstar Games</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPLORE LEONIDA (interactive map) ══════════ -->
+<section class="section leonida" id="leonida" aria-labelledby="map-title">
+  <div class="container">
+    <span class="kicker">Explore</span>
+    <h2 class="h2" id="map-title">ONE STATE.<br /><span class="accent">EVERY KIND OF TROUBLE.</span></h2>
+    <p class="lede" style="margin-top:.7rem">The full Leonida map, as compiled by the GTA VI mapping community — Vice City on the east, the Keys on the south, Mount Kalaga up north. Use the region chips to explore each corner.</p>
+
+    <div class="map-grid">
+      <div class="map-panel" role="img" aria-label="Complete Leonida map from Grand Theft Auto VI, compiled by the fan mapping community">
+        <span class="map-title">LEONIDA · USA</span>
+        <img class="leonida-map-img" src="assets/map-leonida.jpg" alt="The complete GTA VI map of Leonida with a coordinate grid: Port Gellhorn and Mount Kalaga National Park in the north, Ambrosia and Vice City on the east, Grassrivers wetlands in the south, and the Leonida Keys island chain at the bottom" loading="lazy" />
+        <span class="map-credit">Leonida, mapped — compiled by the Yanis GTA VI Mapping Community from leaked + official material · Not an official Rockstar release</span>
+      </div>
+
+      <!-- Region info panel -->
+      <aside class="region-panel" aria-live="polite">
+        <span class="region-num" id="regionNum">REGION 01 / 05</span>
+        <h3 id="regionName">Vice City</h3>
+        <p class="region-tag" id="regionTag">“Everything in excess.”</p>
+        <p id="regionDesc">The neon crown of Leonida — Ocean Beach’s pastel art-deco hotels, the panaderías of Little Cuba, the Tisha-Wocka flea market and the Vice City Port, “the cruise ship capital of the world.” By day, paradise. By night, the most dangerous zip code in America.</p>
+        <div class="known">
+          <small>Known for</small>
+          <ul id="regionKnown">
+            <li>Ocean Beach art-deco strip</li>
+            <li>Vice City Port — cruise capital</li>
+            <li>Little Cuba &amp; Tisha-Wocka flea market</li>
+          </ul>
+        </div>
+        <div class="heat">
+          <small>HEAT LEVEL</small>
+          <span class="stars" id="regionHeat" aria-label="Heat level 5 of 5">★★★★★</span>
+        </div>
+        <div class="region-chips" id="regionChips" role="group" aria-label="Jump to region"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MEDIA / TRAILERS ══════════ -->
+<section class="section media" id="media" aria-labelledby="media-title">
+  <div class="container">
+    <span class="kicker">Official Media</span>
+    <h2 class="h2" id="media-title">WATCH THE<br /><span class="accent">ROAD TO LAUNCH</span></h2>
+    <p class="lede" style="margin-top:.7rem">Every official video, one click away — clicking any card opens it on YouTube in a new tab. <strong style="color:var(--gold)">Tip:</strong> “GTA 6 — Main Theme Music” is already playing as the site's background music — tap anywhere to hear it.</p>
+
+    <!-- Extended Look banner -->
+    <div class="extended-banner">
+      <img src="assets/shot-gasstation.webp" alt="Official GTA VI promotional illustration: Jason and Lucia pulling bandanas over their faces outside the XERO gas station in Vice City at sunset" loading="lazy" />
+      <div class="eb-content">
+        <small>★ Showcase · Aug 27, 2026</small>
+        <h3>GTA VI: AN EXTENDED LOOK</h3>
+        <p>26 minutes of gameplay captured on a standard PS5 — heists, six-star wanted levels, Vice City at night, the gala job and more.</p>
+        <div class="eb-actions">
+          <a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener noreferrer">▶&nbsp; WATCH ON YOUTUBE ↗</a>
+          <a class="btn btn-teal btn-sm" href="https://www.netflix.com/GTAVI" target="_blank" rel="noopener noreferrer">WATCH ON NETFLIX ↗</a>
+        </div>
+      </div>
+    </div>
+    <p class="art-credit">Banner: official promotional illustration © Rockstar Games · Videos open on YouTube in a new tab · Netflix link uses Netflix’s direct /GTAVI page (requires a subscription)</p>
+
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- ══════════ EDITIONS ══════════ -->
+<section class="section editions" id="editions" aria-labelledby="ed-title">
+  <div class="container">
+    <span class="kicker">Editions &amp; Pricing</span>
+    <h2 class="h2" id="ed-title">TWO WAYS TO<br /><span class="accent">PLAY VICE CITY</span></h2>
+
+    <!-- Official cover collage -->
+    <div class="box-banner" role="img" aria-label="Official Grand Theft Auto VI cover art: a nine-panel collage of Vice City characters and vehicles around the VI logo">
+      <img src="assets/art-box-collage.jpg" alt="Official GTA VI cover art — nine-panel collage: seaplane, Jason and Lucia, speedboat and flamingo, a gunman in a white suit, a woman outside a neon club, a yellow supercar, an alligator, a gangster in sunglasses, and a motorcyclist — all around the Grand Theft Auto VI logo" loading="lazy" />
+    </div>
+    <p class="art-credit">Official cover art © Rockstar Games</p>
+
+    <div class="currency-toggle" role="group" aria-label="Currency">
+      <button class="active" data-cur="usd" aria-pressed="true">USD $</button>
+      <button data-cur="gbp" aria-pressed="false">GBP £</button>
+      <button data-cur="eur" aria-pressed="false">EUR €</button>
+    </div>
+
+    <div class="edition-grid">
+      <!-- STANDARD -->
+      <article class="edition">
+        <small class="kicker2">The Essential Getaway</small>
+        <h3>STANDARD EDITION</h3>
+        <p class="price"><sub class="cur-sym">$</sub><span class="price-val" data-usd="79.99" data-gbp="69.99" data-eur="79.99">79.99</span></p>
+        <p class="price-note">PS5 · PS5 Pro · Xbox Series X|S — digital, or box with download code (ships Nov 12, no disc).</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Grand Theft Auto VI — full base game</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>30 days of GTA+ membership</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Vintage Vice City Pack</strong> — pre-order bonus (see below)</span></li>
+          <li class="dim"><svg class="cross" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Ultimate vehicles, weapons &amp; stores</li>
+          <li class="dim"><svg class="cross" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>Ultimate is digital-only</li>
+        </ul>
+      </article>
+
+      <!-- ULTIMATE -->
+      <article class="edition ultimate">
+        <span class="ribbon">MOST WANTED</span>
+        <small class="kicker2">The Full Vice City</small>
+        <h3>ULTIMATE EDITION</h3>
+        <p class="price"><sub class="cur-sym">$</sub><span class="price-val" data-usd="99.99" data-gbp="89.99" data-eur="99.99">99.99</span></p>
+        <p class="price-note">Digital only. Upgrade Standard → Ultimate later for <sub class="cur-sym">$</sub><span class="price-val" data-usd="20.00" data-gbp="20.00" data-eur="20.00">20.00</span> (Microsoft Store; PlayStation Store TBC).</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><strong>Everything in Standard Edition</strong></li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Exclusive premium vehicles</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Premium weapons &amp; weapon finishes</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Exclusive apparel &amp; tattoos for Jason &amp; Lucia</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Access to exclusive in-game stores</li>
+          <li><svg class="tick" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Vintage Vice City Pack</strong> — pre-order bonus</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="editions-note">This tribute sells nothing and takes no commission. To actually buy the game, head to <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">rockstargames.com/VI ↗</a> or your platform store (PlayStation Store / Microsoft Store).</p>
+
+    <!-- Edition bonus -->
+    <div class="bonus-strip">
+      <div class="bonus-badge">VINTAGE<br />VICE<br />CITY<br />PACK</div>
+      <div>
+        <h4>★ VINTAGE VICE CITY PACK — THE PRE-ORDER BONUS</h4>
+        <p>Bundled with both editions for pre-orders (and purchases through Nov 20, 2026; boxed copies while supplies last): the <strong>’55 Vapid Stanier</strong> sedan, an <strong>Ocean Beach garage</strong>, vintage outfits &amp; hairstyles for Jason and Lucia, and weapon patterns inspired by <strong>Tommy Vercetti</strong>.</p>
+      </div>
+    </div>
+
+    <table class="compare" aria-label="Editions comparison">
+      <thead><tr><th>Compare</th><th>Standard — $79.99</th><th>Ultimate — $99.99</th></tr></thead>
+      <tbody>
+        <tr><td>Launch date</td><td>Nov 19, 2026</td><td>Nov 19, 2026 — no early access</td></tr>
+        <tr><td>Format</td><td>Digital, or box w/ download code (ships Nov 12)</td><td>Digital only</td></tr>
+        <tr><td>30 days GTA+</td><td>✓ Included</td><td>✓ Included</td></tr>
+        <tr><td>Vintage Vice City Pack</td><td>✓ Pre-order bonus</td><td>✓ Pre-order bonus</td></tr>
+        <tr><td>Premium vehicles / weapons / stores</td><td>—</td><td>✓ Exclusive collection</td></tr>
+        <tr><td>Upgrade path</td><td>→ Ultimate for $20</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="fineprint">
+      <span>· Prices shown for US / UK / EU storefronts (A$129.95 / A$159.95 reported for Australia); regional pricing may vary.</span>
+      <span>· <strong>Collector’s Set — $399.99</strong> (Ultimate Edition content not included; the game itself is bought separately).</span>
+      <span>· Physical copies contain a download code, not a disc. Digital pre-load began <strong>Nov 10, 2026</strong>.</span>
+      <span>· Trademarks belong to their owners. Details correct as announced at time of writing (Nov 2026).</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PS5 ══════════ -->
+<section class="section ps5" id="ps5" aria-labelledby="ps5-title">
+  <div class="ps5-mark" aria-hidden="true">PS5</div>
+  <div class="container">
+    <span class="kicker">PlayStation 5</span>
+    <h2 class="h2" id="ps5-title">CAPTURED ON<br /><span class="accent" style="background:linear-gradient(180deg,#a9fff9,#25f4ee 60%,#0e9aa0);-webkit-background-clip:text;background-clip:text">PLAYSTATION 5</span></h2>
+
+    <div class="ps5-cols">
+      <div class="ps-card">
+        <h3><span class="dot-ok">✓</span> CONFIRMED</h3>
+        <ul>
+          <li><b>Launch platform:</b> PS5 &amp; PS5 Pro — day one, alongside Xbox Series X|S.</li>
+          <li><b>“An Extended Look”</b> — the 26-minute showcase was captured on a <b>standard PS5</b>.</li>
+          <li><b>Trailer 2</b> and the Launch Trailer were also “captured on PS5”.</li>
+          <li><b>Pre-load:</b> install now — digital pre-load went live Nov 10, 2026.</li>
+          <li><b>30 days of GTA+</b> included with both editions on PS5.</li>
+          <li><b>Same price as Xbox</b> — $79.99 / $99.99.</li>
+        </ul>
+      </div>
+      <div class="ps-card">
+        <h3><span class="dot-tba">?</span> TBA / UNCONFIRMED</h3>
+        <ul>
+          <li><b>Frame rate &amp; resolution targets</b> — no official PS5/PS5 Pro spec sheets yet.</li>
+          <li><b>DualSense haptics &amp; adaptive triggers</b> — not detailed by Rockstar.</li>
+          <li><b>Quality vs Performance modes</b> — expected for PS5, unconfirmed.</li>
+          <li><b>PS5 Pro exclusive enhancements</b> — platform listed; details pending.</li>
+          <li><b>PC version</b> — not announced as of Nov 11, 2026. Do not buy “PC keys” from resellers.</li>
+          <li><b>GTA VI Online</b> — details and pricing for the online mode TBA.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="netflix-strip">
+      <p><b>GTA VI: An Extended Look</b> is also streaming on <strong>Netflix</strong> — 26 minutes of Leonida on your couch (or search “Grand Theft Auto VI” on Netflix if the link doesn’t open).</p>
+      <a class="btn btn-ghost btn-sm" href="https://www.netflix.com/GTAVI" target="_blank" rel="noopener noreferrer">OPEN NETFLIX /GTAVI ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ROAD TO LAUNCH / NEWS ══════════ -->
+<section class="section timeline-sec" id="news" aria-labelledby="news-title">
+  <div class="container">
+    <span class="kicker">Road to Launch</span>
+    <h2 class="h2" id="news-title">EVERY MILESTONE,<br /><span class="accent">ONE SUNNY SUNDAY IN NOVEMBER</span></h2>
+
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <span class="kicker">Questions</span>
+    <h2 class="h2" id="faq-title">FREQUENTLY ASKED<br /><span class="accent">IN LEONIDA</span></h2>
+    <div class="faq-wrap" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ══════════ NEWSLETTER CTA ══════════ -->
+<section class="presave" aria-labelledby="presave-title">
+  <div class="container">
+    <div class="presave-inner">
+      <div>
+        <h2 id="presave-title">DON’T MISS<br />LAUNCH DAY.</h2>
+        <p>One email on November 19. That’s it. Launch-day chaos, pre-load troubleshooting and first impressions from the streets of Leonida. No spam — we’re criminals, not monsters.</p>
+      </div>
+      <form class="news-form" id="newsForm" novalidate>
+        <label for="emailInput" style="position:absolute;left:-9999px">Email address</label>
+        <input type="email" id="emailInput" name="email" placeholder="you@leonida.mail" required autocomplete="email" aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">SIGN ME UP ★</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">GRAND THEFT AUTO <em>VI</em></div>
+        <p>An unofficial fan-made tribute and information hub for Grand Theft Auto VI. All facts sourced from Rockstar Games announcements and official channels.</p>
+        <p class="art-credit" style="margin-top:.6rem">MUSIC: “GTA 6 — Main Theme Music” (Dan Allen Gaming, YouTube) — the only track, streamed from its only legal source. Not Rockstar’s music — no affiliation.</p>
+      </div>
+      <nav aria-label="Official links">
+        <h5>Official</h5>
+        <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">rockstargames.com/VI ↗</a>
+        <a href="https://www.rockstargames.com/newswire" target="_blank" rel="noopener noreferrer">Rockstar Newswire ↗</a>
+        <a href="https://www.youtube.com/@RockstarGames" target="_blank" rel="noopener noreferrer">Rockstar Games · YouTube ↗</a>
+        <a href="https://www.netflix.com/GTAVI" target="_blank" rel="noopener noreferrer">GTA VI: An Extended Look · netflix.com/GTAVI ↗</a>
+      </nav>
+      <nav aria-label="Sections">
+        <h5>Site</h5>
+        <a href="#overview">Overview</a>
+        <a href="#story">Story</a>
+        <a href="#leonida">Explore Leonida</a>
+        <a href="#media">Trailers</a>
+        <a href="#editions">Editions &amp; Prices</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <div class="legal">
+      <p><b>Disclaimer:</b> This is an unofficial, fan-made tribute. Not affiliated with, endorsed by, or sponsored by Rockstar Games, Rockstar North, Take-Two Interactive, Sony Interactive Entertainment, Microsoft or Netflix. “Grand Theft Auto”, “GTA”, “Vice City”, “Leonida”, “Rockstar Games”, “PS5”, “PlayStation”, “Xbox” and related marks are trademarks of their respective owners. <b>Promotional images and in-game captures on this page © Rockstar Games / Take-Two Interactive</b>, shown reduced and unaltered for fan tribute purposes; they are not sold or licensed. Story details come from officially released trailers and Rockstar communications; gameplay may change. Prices and dates as announced at time of writing (Nov 2026) and may vary by region.</p>
+      <p style="margin-top:.5rem">© <span id="footerYear">2026</span> Leonida Fan Tribute · Made with sunset and questionable life choices · See you on the streets of Vice City ★</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Leonida Radio — plays ONLY "GTA 6 - Official Main Theme Music" (Dan Allen Gaming, YouTube) -->
+<div id="ytRadio" aria-hidden="true" style="position:fixed;left:-2000px;top:-2000px;width:200px;height:120px;opacity:0;pointer-events:none;overflow:hidden"></div>
+<div class="radio" id="radio" role="radio" aria-label="Leonida Radio — background music: GTA 6 Main Theme Music (Dan Allen Gaming, YouTube)">
+  <span class="tap-for-sound" id="tapForSound" aria-hidden="true">SCROLL OR TAP FOR SOUND</span>
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <div class="radio-info">
+    <b id="radioFreq">CH 06 · LEONIDA RADIO</b>
+    <small id="radioTrack">GTA 6 — MAIN THEME MUSIC</small>
+    <em id="radioArtist">Dan Allen Gaming · YouTube</em>
+  </div>
+  <div class="radio-btns">
+    <button class="radio-btn power" id="radioPower" aria-pressed="false" aria-label="Turn Leonida Radio on or off" title="Turn music on / off">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9"/><path d="M18.4 6.6a8 8 0 1 1-12.8 0"/></svg>
+    </button>
+  </div>
+</div>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ══════════ PS5 LOADING SCREEN MODAL ══════════ -->
+<div class="modal" id="loadingModal" role="dialog" aria-modal="true" aria-labelledby="lsTitle" aria-hidden="true">
+  <div class="loading-screen"></div>
+  <div class="ls-top">
+    <div class="ls-logo" id="lsTitle">GRAND THEFT AUTO<strong>VI</strong></div>
+    <div class="ls-chips">
+      <span class="ls-chip">PS5</span>
+      <span class="ls-chip">ROCKSTAR GAMES</span>
+      <button class="ls-close" id="closeLoading" aria-label="Close loading screen">✕</button>
+    </div>
+  </div>
+  <div class="ls-center">
+    <p class="ls-loading" id="lsLabel">LOADING LEONIDA</p>
+    <div class="ls-percent" id="lsPercent">0%</div>
+    <div class="ls-bar" aria-hidden="true"><div class="ls-fill" id="lsFill"></div></div>
+    <p class="ls-press" id="lsPress">Press any key — carry on</p>
+  </div>
+  <div class="ls-tip">
+    <small>Vice City·pedia</small>
+    <p id="lsTip">Sprunk: now with 40% more “vibes”.</p>
+  </div>
+  <div class="ls-foot"><span>© 2026 Rockstar Games / Take-Two Interactive · Key art shown</span><span>ESC to quit</span></div>
+</div>
+
+<script>
+/* ================================================================
+   GTA VI — LEONIDA · interactive layer
+   ================================================================ */
+'use strict';
+
+const $  = (s, c) => (c || document).querySelector(s);
+const $$ = (s, c) => Array.from((c || document).querySelectorAll(s));
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- Footer year ---------- */
+$('#footerYear').textContent = new Date().getFullYear();
+
+/* ---------- Nav: shrink on scroll + back to top ---------- */
+const nav = $('#nav');
+const backTop = $('#backTop');
+const onScroll = () => {
+  const y = window.scrollY || document.documentElement.scrollTop;
+  nav.classList.toggle('scrolled', y > 40);
+  backTop.classList.toggle('show', y > 560);
+  spyNav(y);
+};
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' }));
+
+/* ---------- Scroll-spy ---------- */
+const spyLinks = $$('#navLinks a');
+const spyMap = new Map(spyLinks.map(a => [a.getAttribute('href').slice(1), a]));
+const spySections = ['overview','story','leonida','media','editions','faq'].map(id => document.getElementById(id));
+function spyNav(y){
+  let current = null;
+  for (const sec of spySections) {
+    if (sec && sec.offsetTop - 140 <= y) current = sec.id;
+  }
+  spyLinks.forEach(a => a.classList.remove('active'));
+  if (current && spyMap.has(current)) spyMap.get(current).classList.add('active');
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+
+/* ---------- Mobile menu ---------- */
+const hamburger = $('#hamburger');
+const mobileMenu = $('#mobileMenu');
+function toggleMenu(force){
+  const open = force !== undefined ? force : !mobileMenu.classList.contains('open');
+  mobileMenu.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', String(open));
+  hamburger.textContent = open ? '✕' : '☰';
+}
+hamburger.addEventListener('click', () => toggleMenu());
+$$('#mobileMenu a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+/* ---------- Countdown to launch ---------- */
+const LAUNCH = new Date(2026, 10, 19, 0, 0, 0); // 0-indexed month → November
+const cdD = $('#cdDays'), cdH = $('#cdHours'), cdM = $('#cdMins'), cdS = $('#cdSecs');
+const pad = n => String(n).padStart(2, '0');
+function tickCountdown(){
+  let diff = LAUNCH - Date.now();
+  if (diff <= 0) {
+    cdD.textContent = cdH.textContent = cdM.textContent = cdS.textContent = '00';
+    $('.cd-note').textContent = '★ GTA VI IS LIVE — SEE YOU IN LEONIDA ★';
+    return true;
+  }
+  cdD.textContent = pad(Math.floor(diff / 86400000)); diff %= 86400000;
+  cdH.textContent = pad(Math.floor(diff / 3600000));  diff %= 3600000;
+  cdM.textContent = pad(Math.floor(diff / 60000));    diff %= 60000;
+  cdS.textContent = pad(Math.floor(diff / 1000));
+  return false;
+}
+const countdownDone = tickCountdown();
+if (!countdownDone) setInterval(tickCountdown, 1000);
+
+/* ---------- Duplicate ticker for seamless marquee ---------- */
+const tickerInner = $('#tickerInner');
+tickerInner.innerHTML += tickerInner.innerHTML;
+
+/* ================================================================
+   EXPLORE LEONIDA — interactive map
+   ================================================================ */
+const REGIONS = [
+  {
+    id:'vice', num:'01', name:'Vice City', tag:'“Everything in excess.”', x:236, y:292, labelDx:14, labelDy:4, heat:5,
+    desc:'The neon crown of Leonida — Ocean Beach’s pastel art-deco hotels, the panaderías of Little Cuba, the Tisha-Wocka flea market and the Vice City Port, “the cruise ship capital of the world.” By day, paradise. By night, the most dangerous zip code in America.',
+    known:['Ocean Beach art-deco strip','Vice City Port — cruise capital','Little Cuba & Tisha-Wocka flea market']
+  },
+  {
+    id:'grassrivers', num:'02', name:'Grassrivers', tag:'“The untamable jewel of Leonida’s crown.”', x:172, y:296, labelDx:-12, labelDy:2, labelAnchor:'end', heat:3,
+    desc:'Vast mangrove wetlands to the south-west — gators, pythons and worse. Airboat country, fishing camps, and the kind of secrets the water never gives back. Perfect terrain for a getaway gone wrong.',
+    known:['Mangrove & Everglades-style wetlands','Airboats, gators and fishing camps','Swamp hideouts off the grid']
+  },
+  {
+    id:'keys', num:'03', name:'Leonida Keys', tag:'“The dress code is casual. The bars are loaded.”', x:300, y:452, labelDx:0, labelDy:-16, heat:4,
+    desc:'A glittering chain of islands on the doorstep of some of the most beautiful — and most dangerous — waters in America. Fishing boats by day, drug runners by night. Jason’s world before Lucia walked out of prison.',
+    known:['Drug-runner routes & marinas','Key bars, bait shops and boat fuel','Mile-marker smuggling country']
+  },
+  {
+    id:'portgellhorn', num:'04', name:'Port Gellhorn', tag:'“Leonida’s forgotten coast.”', x:70, y:112, labelDx:0, labelDy:-14, heat:3,
+    desc:'Cheap motels, shut-down attractions and salt-rusted dreams on the western panhandle. An economy fuelled by malt liquor, painkillers and truck-stop energy drinks — the kind of place people go to disappear. Or to end up.',
+    known:['Shut-down boardwalk attractions','Truck stops & budget motels','Flea-market outlaws & drifters']
+  },
+  {
+    id:'ambrosia', num:'05', name:'Ambrosia', tag:'“Sugar refinery country.”', x:196, y:190, labelDx:0, labelDy:-14, heat:4,
+    desc:'Cane fields, a rumbling sugar refinery and a biker gang that “provides almost everything else.” Ambrosia runs on sweetness on the surface and something much darker underneath — perfect country for a conspiracy.',
+    known:['Ambrosia sugar refinery','The local biker gang — everything else','Cane fields & hidden stills']
+  }
+];
+
+const chipsWrap = $('#regionChips');
+
+REGIONS.forEach(r => {
+  const chip = document.createElement('button');
+  chip.className = 'chip';
+  chip.textContent = r.name;
+  chip.dataset.id = r.id;
+  chip.addEventListener('click', () => selectRegion(r.id));
+  chipsWrap.appendChild(chip);
+});
+
+const regionNum = $('#regionNum'), regionName = $('#regionName'), regionTag = $('#regionTag'),
+      regionDesc = $('#regionDesc'), regionKnown = $('#regionKnown'), regionHeat = $('#regionHeat');
+
+function selectRegion(id){
+  const r = REGIONS.find(x => x.id === id);
+  if (!r) return;
+  regionNum.textContent = 'REGION ' + r.num + ' / 05';
+  regionName.textContent = r.name;
+  regionTag.textContent = r.tag;
+  regionDesc.textContent = r.desc;
+  regionKnown.innerHTML = r.known.map(k => '<li>' + k + '</li>').join('');
+  regionHeat.setAttribute('aria-label', 'Heat level ' + r.heat + ' of 5');
+  regionHeat.innerHTML = '★★★★★'.split('').map((s, i) => i < r.heat ? s : '<span class="off">' + s + '</span>').join('');
+  $$('.chip', chipsWrap).forEach(c => c.classList.toggle('active', c.dataset.id === id));
+}
+selectRegion('vice');
+
+/* ================================================================
+   MEDIA — official videos, plain hyperlinks to YouTube
+   ================================================================ */
+const VIDEOS = [
+  { id:'QdBZY2fkU-0', date:'Dec 04 · 2023', title:'Grand Theft Auto VI — Trailer 1',
+    desc:'The first-ever look: Lucia in prison, Leonida mayhem, a whole new Vice City.',
+    song:'“Love Is a Long Road” — Tom Petty', tag:'OFFICIAL · TRAILER 1' },
+  { id:'VQRLujxTm3c', date:'May 06 · 2025', title:'Grand Theft Auto VI — Trailer 2',
+    desc:'Lucia walks free. Jason rolls up. Everything goes wrong. 475M views in 24 hours.',
+    song:'“Hot Together” — The Pointer Sisters', tag:'OFFICIAL · TRAILER 2' },
+  { id:'tJbzMqJGH4k', date:'Aug 27 · 2026', title:'Grand Theft Auto VI: An Extended Look',
+    desc:'26 minutes of gameplay captured on a standard PS5 — heists, wanted levels, the gala job.',
+    song:'Includes Depeche Mode on the radio', tag:'OFFICIAL · SHOWCASE' },
+  { id:'rz1B4B2yBZY', date:'Oct 15 · 2026', title:'Grand Theft Auto VI — Launch Trailer',
+    desc:'Jason and Lucia reunite. An easy job in Vice City goes wrong. One last ride.',
+    song:'“Flower in a Hurricane” — Justice ft. Tame Impala, SZA & King Gizzard & The Lizard Wizard', tag:'OFFICIAL · LAUNCH TRAILER' }
+];
+
+const videoGrid = $('#videoGrid');
+VIDEOS.forEach(v => {
+  const a = document.createElement('a');
+  a.className = 'video-card';
+  a.href = 'https://www.youtube.com/watch?v=' + v.id;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.setAttribute('aria-label', 'Watch ' + v.title + ' on YouTube (opens in a new tab)');
+  a.innerHTML =
+    '<div class="thumb">' +
+      '<img src="assets/thumbs/' + v.id + '.jpg" alt="Official thumbnail: ' + v.title.replace(/"/g, '&quot;') + '" loading="lazy" />' +
+      '<span class="play" aria-hidden="true"><span class="play-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></span></span>' +
+    '</div>' +
+    '<div class="video-info">' +
+      '<small>' + v.tag + '</small>' +
+      '<h4>' + v.title + '</h4>' +
+      '<p>' + v.desc + '</p>' +
+      '<span class="song">♪ ' + v.song + '</span>' +
+      '<span class="open-link">WATCH ON YOUTUBE ↗</span>' +
+    '</div>';
+  videoGrid.appendChild(a);
+});
+
+/* ================================================================
+   TIMELINE — road to launch
+   ================================================================ */
+const MILESTONES = [
+  { date:'Dec 04 · 2023', title:'Trailer 1 — the world finds out', text:'Rockstar drops the first GTA VI trailer unannounced. Lucia in Leonida Penitentiary, a Leonida “for the people” soaked in social-media chaos. It breaks internet records within hours.' },
+  { date:'May 06 · 2025', title:'Trailer 2 — “Hot Together”', text:'Lucia walks out. Jason rolls up. Set to The Pointer Sisters, it racks up 475 million views in 24 hours — and slips in the news that the game moves from 2025 to May 26, 2026.' },
+  { date:'Nov 2025', title:'The second delay', text:'Rockstar announces GTA VI will now launch November 19, 2026 — shifting from May to “the most polished launch possible.” Fans riot. Leonida waits.' },
+  { date:'Jun 24–25 · 2026', title:'Prices & pre-orders go live', text:'Rockstar confirms $79.99 Standard / $99.99 Ultimate on PS5 and Xbox Series X|S. Pre-orders open worldwide at midnight, June 25.' },
+  { date:'Aug 27 · 2026', title:'“An Extended Look” premieres', text:'A 26-minute gameplay showcase captured on a standard PS5 lands on Netflix first, then YouTube — six-star wanted levels, heists, the gala job.' },
+  { date:'Oct 15 · 2026', title:'Launch Trailer', text:'“Flower in a Hurricane” by Justice ft. Tame Impala, SZA and King Gizzard & The Lizard Wizard. The final countdown begins.' },
+  { date:'Oct 29 · 2026', title:'“Pusher” — Justice & Gesaffelstein', text:'First single from the GTA Original Score (full album Dec 11, 2026). The radio in Vice City is already a character.' },
+  { date:'Nov 10 · 2026', title:'PRE-LOAD IS LIVE', text:'PS5 and Xbox players can download GTA VI now. Boxed codes begin hitting stores Nov 12. Free up that SSD — Leonida is heavy.' },
+  { date:'Nov 19 · 2026', title:'★ GLOBAL LAUNCH — LEONIDA OPENS ★', text:'Grand Theft Auto VI launches worldwide on PS5, PS5 Pro and Xbox Series X|S. The darkest side of the sunniest place in America is now open for business.', live:true }
+];
+const timeline = $('#timeline');
+MILESTONES.forEach(m => {
+  const div = document.createElement('article');
+  div.className = 'tl-item' + (m.live ? ' live' : '');
+  div.innerHTML = '<span class="tl-date">' + m.date + '</span><h3>' + m.title + '</h3><p>' + m.text + '</p>';
+  timeline.appendChild(div);
+});
+
+/* ================================================================
+   FAQ — accordion
+   ================================================================ */
+const FAQS = [
+  { q:'When does Grand Theft Auto VI release?', a:'<strong>November 19, 2026</strong> — worldwide, on PS5, PS5 Pro and Xbox Series X|S. Digital pre-load began November 10, 2026. Boxed copies contain a download code and ship from November 12. Neither edition gets early access.' },
+  { q:'Is GTA 6 coming to PC?', a:'No PC version has been announced as of November 2026. Rockstar currently lists only PlayStation 5 / PS5 Pro and Xbox Series X|S. Historically, GTA titles arrive on PC later — but anyone selling “GTA VI PC keys” right now is a scammer. Do not feed the griefers.' },
+  { q:'How much does GTA VI cost?', a:'Standard Edition: <strong>$79.99 / £69.99 / €79.99</strong>. Ultimate Edition: <strong>$99.99 / £89.99 / €99.99</strong>, digital only. Australian pricing is reported at A$129.95 / A$159.95. Both include 30 days of GTA+ and the pre-order Vintage Vice City Pack. Upgrading Standard → Ultimate costs $20.' },
+  { q:'What’s in the Ultimate Edition?', a:'Everything in Standard, plus an exclusive collection: premium vehicles, premium weapons and weapon finishes, exclusive apparel &amp; tattoos, access to exclusive in-game stores — and the Vintage Vice City Pack. Ultimate is digital-only.' },
+  { q:'What is the Vintage Vice City Pack pre-order bonus?', a:'Available on <strong>both editions</strong> for pre-orders and purchases before November 20, 2026 (boxed copies: while supplies last): the <strong>’55 Vapid Stanier</strong> classic sedan, an <strong>Ocean Beach garage</strong>, vintage outfits &amp; hairstyles for Jason and Lucia, and weapon patterns inspired by <strong>Tommy Vercetti</strong>.' },
+  { q:'Who are the protagonists? Is Lucia really the first playable female lead?', a:'Yes — <strong>Lucia Caminos</strong> is GTA’s first playable female protagonist, fresh out of Leonida Penitentiary. <strong>Jason Duval</strong> is an ex-army grifter running with Keys drug runners. The duo switch seamlessly in-game; you can also roam Leonida together. Think Bonnie &amp; Clyde, Florida edition.' },
+  { q:'How big is Leonida? Is Vice City back?', a:'Vice City is the neon heart of the state — Ocean Beach, Little Cuba, the port, the flea market. Beyond it: the <strong>Leonida Keys</strong> (drug-runner islands), <strong>Grassrivers</strong> (mangrove wetlands and gators), <strong>Port Gellhorn</strong> (forgotten panhandle coast) and <strong>Ambrosia</strong> (sugar-refinery biker country). Rockstar has not published a map or confirmed an exact square mileage — treat any “40x bigger than GTA V” leak with suspicion.' },
+  { q:'Is there an online mode? Will GTA Online carry over?', a:'GTA VI’s online mode is expected but Rockstar has not detailed it — no release date, no pricing, no transfer info for existing GTA Online accounts or Shark Cards. What we know: both editions bundle 30 days of GTA+. Everything else is TBA.' },
+  { q:'Is this website official?', a:'No. This is an unofficial fan-made tribute. Grand Theft Auto VI is made by Rockstar Games (Rockstar North / Rockstar Toronto) and published by Take-Two Interactive. For anything that matters — pre-orders, support, refunds — use <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">rockstargames.com/VI</a> and your platform store.' }
+];
+const faqList = $('#faqList');
+FAQS.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'faq-item' + (i === 0 ? ' open' : '');
+  div.innerHTML =
+    '<button class="faq-q" aria-expanded="' + (i === 0) + '" aria-controls="faq-a-' + i + '" id="faq-q-' + i + '">' +
+      '<span>' + item.q + '</span><span class="plus" aria-hidden="true">+</span>' +
+    '</button>' +
+    '<div class="faq-a" id="faq-a-' + i + '" role="region" aria-labelledby="faq-q-' + i + '">' +
+      '<div class="faq-a-inner">' + item.a + '</div>' +
+    '</div>';
+  faqList.appendChild(div);
+});
+$$('.faq-q', faqList).forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(item.classList.contains('open')));
+  });
+});
+
+/* ================================================================
+   CURRENCY TOGGLE — editions
+   ================================================================ */
+const SYMBOLS = { usd:'$', gbp:'£', eur:'€' };
+const curButtons = $$('.currency-toggle button');
+const priceVals = $$('.price-val');
+const curSyms = $$('.cur-sym');
+curButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const cur = btn.dataset.cur;
+    curButtons.forEach(b => { b.classList.toggle('active', b === btn); b.setAttribute('aria-pressed', String(b === btn)); });
+    priceVals.forEach(p => { p.textContent = p.dataset[cur]; });
+    curSyms.forEach(s => { s.textContent = SYMBOLS[cur]; });
+  });
+});
+
+/* ================================================================
+   NEWSLETTER — fake but friendly
+   ================================================================ */
+const toast = $('#toast');
+let toastTimer = null;
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 4200);
+}
+$('#newsForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const input = $('#emailInput');
+  const value = input.value.trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(value)) {
+    showToast('That email looks off — even for Leonida. Try again, hotshot.');
+    input.focus();
+    return;
+  }
+  input.value = '';
+  showToast('Welcome aboard, ' + value.split('@')[0] + ' — see you in Vice City on Nov 19. ★');
+});
+
+/* ================================================================
+   PS5 LOADING SCREEN EXPERIENCE
+   ================================================================ */
+const modal = $('#loadingModal');
+const openBtn = $('#openLoading');
+const closeBtn = $('#closeLoading');
+const lsFill = $('#lsFill');
+const lsPercent = $('#lsPercent');
+const lsTip = $('#lsTip');
+const lsLabel = $('#lsLabel');
+const lsPress = $('#lsPress');
+
+const LOADING_TIPS = [
+  'Sprunk: now with 40% more “vibes”.',
+  'Phil at Ammu-Nation says: you break it, you bought it.',
+  'Leonida Department of Corrections reminds you: littering is community service.',
+  'Sinfrontera National Bank — remember your PIN. And your alibi.',
+  'Vice City PD tip: driving casual is the fastest way to not get pulled over.',
+  'Bahama Mamas — taste the Keys life, responsibly-ish.',
+  'Dayho — cerveza del sol. Sip slow, ride fast.',
+  'LDC community service hours may vary by felony.',
+  'Looking for work? Check the Port Gellhorn want ads. No questions asked.',
+  'GTA Original Score — Justice & Gesaffelstein, in stores December 11.',
+  'Six stars means helicopters. Start driving now.',
+  'Pre-load went live Nov 10. Your SSD called — it’s ready.'
+];
+
+let lsProgress = 0;
+let lsInterval = null;
+let lsTipInterval = null;
+let lsTipIndex = 0;
+let lastFocused = null;
+
+function tickLoading(){
+  const remaining = 100 - lsProgress;
+  const step = Math.max(0.4, remaining * (Math.random() * 0.055 + 0.012));
+  lsProgress = Math.min(100, lsProgress + step);
+  const pct = Math.floor(lsProgress);
+  lsFill.style.width = lsProgress + '%';
+  lsPercent.textContent = pct + '%';
+  if (lsProgress >= 100) {
+    clearInterval(lsInterval);
+    clearInterval(lsTipInterval);
+    lsLabel.textContent = 'ENTERING VICE CITY';
+    lsPercent.textContent = '100%';
+    lsFill.style.width = '100%';
+    lsTip.textContent = 'Jason and Lucia are waiting on the boulevard. Don’t keep them.';
+    lsPress.classList.add('show');
+  }
+}
+function rotateTip(){
+  lsTipIndex = (lsTipIndex + 1) % LOADING_TIPS.length;
+  lsTip.textContent = LOADING_TIPS[lsTipIndex];
+}
+function openLoadingScreen(){
+  lastFocused = document.activeElement;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  lsProgress = 0; lsTipIndex = 0;
+  lsFill.style.width = '0%'; lsPercent.textContent = '0%';
+  lsLabel.textContent = 'LOADING LEONIDA';
+  lsPress.classList.remove('show');
+  lsTip.textContent = LOADING_TIPS[0];
+  clearInterval(lsInterval); clearInterval(lsTipInterval);
+  lsInterval = setInterval(tickLoading, 90);
+  lsTipInterval = setInterval(rotateTip, 2600);
+  closeBtn.focus();
+}
+function closeLoadingScreen(){
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  clearInterval(lsInterval); clearInterval(lsTipInterval);
+  if (lastFocused && lastFocused.focus) lastFocused.focus();
+}
+openBtn.addEventListener('click', openLoadingScreen);
+closeBtn.addEventListener('click', closeLoadingScreen);
+modal.addEventListener('click', e => { if (e.target === modal) closeLoadingScreen(); });
+document.addEventListener('keydown', e => {
+  if (modal.classList.contains('open')) {
+    if (e.key === 'Escape' || lsProgress >= 100) closeLoadingScreen();
+  } else if (e.key === 'Escape') {
+    toggleMenu(false);
+  }
+});
+
+/* ---------- LEONIDA RADIO — the main theme, and nothing else ---------- */
+const radio = $('#radio'),
+      radioPower = $('#radioPower'),
+      tapForSound = $('#tapForSound');
+
+/* ONLY background music: "GTA 6 - Official Main Theme Music" (Dan Allen Gaming, YouTube) —
+   the track the user asked for, streamed from its only legal source (YouTube).
+   No other station, no track switching. If it can't stream, nothing substitutes. */
+const TRACK = { freq:'CH 06 · LEONIDA RADIO', track:'GTA 6 — MAIN THEME MUSIC', artist:'Dan Allen Gaming · YouTube', yt:'aonTwBM1AZM' };
+
+let radioOn = false, soundOn = false;
+let ytPlayer = null, ytLoadingPromise = null, ytUnavailable = false, stationToken = 0;
+let playWatchdog = null;
+
+function setRadioUI(on){
+  radio.classList.toggle('playing', on);
+  radioPower.setAttribute('aria-pressed', String(on));
+}
+function setSoundHint(show){
+  if (tapForSound) tapForSound.classList.toggle('show', show);
+}
+function stopAllAudio(){
+  clearTimeout(playWatchdog);
+  if (ytPlayer && ytPlayer.stopVideo) { try { ytPlayer.stopVideo(); } catch (e) {} }
+}
+function ensureYouTube(){
+  if (ytLoadingPromise) return ytLoadingPromise;
+  ytLoadingPromise = new Promise(resolve => {
+    window.onYouTubeIframeAPIReady = () => {
+      try {
+        ytPlayer = new YT.Player('ytRadio', {
+          videoId: TRACK.yt,
+          playerVars: { autoplay: 1, mute: 1, controls: 0, rel: 0, modestbranding: 1, playsinline: 1, fs: 0, disablekb: 1, iv_load_policy: 3 },
+          events: {
+            onReady: () => resolve(true),
+            onStateChange: e => {
+              if (e.data === 1) {            // PLAYING
+                clearTimeout(playWatchdog);
+                setRadioUI(true);
+              } else if (e.data === 0) {     // ENDED → loop it
+                try { ytPlayer.playVideo(); } catch (err) {}
+              }
+            },
+            onError: () => handleStreamFailure()
+          }
+        });
+      } catch (err) { resolve(false); }
+    };
+    const s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api';
+    s.onerror = () => resolve(false);
+    document.head.appendChild(s);
+    setTimeout(() => { if (!ytPlayer) resolve(false); }, 9000);
+  });
+  return ytLoadingPromise;
+}
+function handleStreamFailure(){
+  ytUnavailable = true;
+  stationToken++;
+  stopAllAudio();
+  setRadioUI(false);
+  showToast('Main theme can’t stream right now — check your connection and tap the power button to retry.');
+}
+function schedulePlayWatchdog(token){
+  clearTimeout(playWatchdog);
+  playWatchdog = setTimeout(() => {
+    if (token === stationToken && !radio.classList.contains('playing')) handleStreamFailure();
+  }, 8000);
+}
+async function playTrack(){
+  stationToken++;
+  const token = stationToken;
+  stopAllAudio();
+  setRadioUI(false);
+  radioOn = true;
+  if (ytUnavailable) { ytUnavailable = false; ytLoadingPromise = null; }
+  const ok = await ensureYouTube();
+  if (token !== stationToken) return;
+  if (!ok) { handleStreamFailure(); return; }
+  try {
+    ytPlayer.loadVideoById(TRACK.yt);
+    if (soundOn) {
+      try { ytPlayer.unMute(); ytPlayer.setVolume(60); } catch (e) {}
+    } else {
+      try { ytPlayer.mute(); } catch (e) {}
+    }
+    ytPlayer.playVideo();
+  } catch (err) { handleStreamFailure(); return; }
+  schedulePlayWatchdog(token);
+}
+
+/* ANY first interaction counts: tap, click, key, scroll wheel, trackpad pan or touch-drag —
+   the moment the user engages, the sound comes on. */
+playTrack();
+setSoundHint(true);
+
+var firstGestureEvents = ['pointerdown','keydown','touchstart','wheel','mousewheel','touchmove','scroll'];
+function firstGesture(){
+  if (!soundOn) {
+    soundOn = true;
+    setSoundHint(false);
+    if (ytPlayer) {
+      try { ytPlayer.unMute(); ytPlayer.setVolume(60); ytPlayer.playVideo(); } catch (e) {}
+      setRadioUI(true);
+      showToast('♪ Sound on: ' + TRACK.track);
+    } else {
+      showToast('Main theme is still loading — it will come in with sound in a moment.');
+    }
+  }
+  firstGestureEvents.forEach(ev => window.removeEventListener(ev, firstGesture));
+  document.removeEventListener('scroll', firstGesture, { capture: true });
+}
+firstGestureEvents.forEach(ev => window.addEventListener(ev, firstGesture, { passive: true }));
+document.addEventListener('scroll', firstGesture, { passive: true, capture: true });
+
+radioPower.addEventListener('click', () => {
+  const isOn = radioOn || radio.classList.contains('playing');
+  if (isOn) {
+    radioOn = false;
+    soundOn = false;
+    stationToken++;
+    stopAllAudio();
+    if (ytPlayer) { try { ytPlayer.pauseVideo(); ytPlayer.mute(); } catch (e) {} }
+    setRadioUI(false);
+    showToast('GTA 6 — MAIN THEME MUSIC off. Tap the power button to start it again.');
+  } else {
+    soundOn = true;
+    setSoundHint(false);
+    radioOn = true;
+    stationToken++;
+    const token = stationToken;
+    if (ytPlayer && ytPlayer.loadVideoById) {
+      try {
+        ytPlayer.loadVideoById(TRACK.yt);
+        ytPlayer.unMute();
+        ytPlayer.setVolume(60);
+        ytPlayer.playVideo();
+        schedulePlayWatchdog(token);
+        showToast('♪ GTA 6 — MAIN THEME MUSIC back on.');
+        return;
+      } catch (e) { /* fall through to a full reload */ }
+    }
+    playTrack();
+  }
+});
+
+/* ---------- init ---------- */
+onScroll();
+</script>
+</body>
+</html>
